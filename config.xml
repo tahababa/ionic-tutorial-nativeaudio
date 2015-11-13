@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionictutorialnativeaudio205853" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget 
+    id="com.ionicframework.ionictutorialnativeaudio205853" 
+    version="0.0.1" 
+    xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    versionCode = "10"
+>
+
+    <!-- xmlns:cdv="http://cordova.apache.org/ns/1.0" -->   
+     
+
+
   <name>ionic-tutorial-nativeaudio</name>
   <description>
         An Ionic Framework and Cordova project.
@@ -19,8 +30,8 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-  <gap:plugin name="de.neofonie.cordova.plugin.nativeaudio" version="3.0.2"/>
   <platform name="android">
+    <gap:plugin name="de.neofonie.cordova.plugin.nativeaudio" version="3.0.2"/>
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
     <icon src="resources/android/icon/drawable-hdpi-icon.png" density="hdpi"/>
@@ -41,6 +52,7 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   <platform name="ios">
+    <gap:plugin name="de.neofonie.cordova.plugin.nativeaudio" version="3.0.2"/>
     <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
     <icon src="resources/ios/icon/icon@2x.png" width="114" height="114"/>
     <icon src="resources/ios/icon/icon-40.png" width="40" height="40"/>
